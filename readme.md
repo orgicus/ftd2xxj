@@ -6,6 +6,88 @@ Original source code is available [here](http://sourceforge.net/projects/ftd2xxj
 The current project has been setup on a Raspberry PI 2 (arm-v7)
 and has updated CDT C++ project settings to compile the library on this architecture.
 
+*Warning* To correctly access the ports please ensure these conditions:
+
+* The default serial driver has been disabled ( run ```sudo lsmod``` and if you see ```ftdi_sio``` and ```usbserial``` unload these drivers: ```sudo rmmod ftdi_sio``` then ```sudo rmmod usbserial```
+* The application is run as ```sudo```.
+
+If you don't run the application as sudo, the correct number of ports may be listed, but they won't be accessible.
+A basic c++ test will ouput this (for a 4 port RS485 converter) without sudo:
+```
+Number of FTDI devices is 4
+Dev 0:
+ Flags=0x1
+ Type=0x3
+ ID=0x0
+ LocId=0x0
+ SerialNumber=
+ Description=
+ ftHandle=0x0
+Dev 1:
+ Flags=0x1
+ Type=0x3
+ ID=0x0
+ LocId=0x0
+ SerialNumber=
+ Description=
+ ftHandle=0x0
+Dev 2:
+ Flags=0x1
+ Type=0x3
+ ID=0x0
+ LocId=0x0
+ SerialNumber=
+ Description=
+ ftHandle=0x0
+Dev 3:
+ Flags=0x1
+ Type=0x3
+ ID=0x0
+ LocId=0x0
+ SerialNumber=
+ Description=
+ ftHandle=0x0
+
+``` 
+while with sudo everything works as expected:
+```
+Number of FTDI devices is 4
+Dev 0:
+ Flags=0x2
+ Type=0x7
+ ID=0x4036011
+ LocId=0x1061
+ SerialNumber=FTURXP83A
+ Description=USB2-H-5004-M A
+ ftHandle=0x0
+Dev 1:
+ Flags=0x2
+ Type=0x7
+ ID=0x4036011
+ LocId=0x1062
+ SerialNumber=FTURXP83B
+ Description=USB2-H-5004-M B
+ ftHandle=0x0
+Dev 2:
+ Flags=0x2
+ Type=0x7
+ ID=0x4036011
+ LocId=0x1063
+ SerialNumber=FTURXP83C
+ Description=USB2-H-5004-M C
+ ftHandle=0x0
+Dev 3:
+ Flags=0x2
+ Type=0x7
+ ID=0x4036011
+ LocId=0x1064
+ SerialNumber=FTURXP83D
+ Description=USB2-H-5004-M D
+ ftHandle=0x0
+
+```
+Using the java wrapper, this may through an error calling ```Service.listDevices()```
+
 Eclipse project details
 =======================
 
