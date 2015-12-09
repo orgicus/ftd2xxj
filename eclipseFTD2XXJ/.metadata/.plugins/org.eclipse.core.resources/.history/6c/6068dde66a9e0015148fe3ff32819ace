@@ -1,0 +1,12 @@
+source.. = src/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               license.html,\
+               os/win32/x86/ftd2xxj.dll
+src.includes = .settings/,\
+               META-INF/,\
+               build.properties,\
+               license.html,\
+               src/,\
+               os/

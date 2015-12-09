@@ -1,0 +1,298 @@
+10:51:05 **** Clean-only build of configuration linux-i386 for project ftd2xxj-native ****
+make clean 
+rm -rf  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o  ./src/device.d ./src/deviceDescriptor.d ./src/eeprom.d ./src/error.d ./src/ftd2xxj.d ./src/logger.d ./src/port.d ./src/service.d  libftd2xxj.so
+ 
+11:35:59 **** Clean-only build of configuration linux-i386 for project ftd2xxj-native ****
+make clean 
+rm -rf  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o  ./src/device.d ./src/deviceDescriptor.d ./src/eeprom.d ./src/error.d ./src/ftd2xxj.d ./src/logger.d ./src/port.d ./src/service.d  libftd2xxj.so
+ 
+12:12:34 **** Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building file: ../src/device.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfpu -MMD -MP -MF"src/device.d" -MT"src/device.d" -o "src/device.o" "../src/device.c"
+gcc: error: unrecognized command line option ‘-mfpu’
+make: *** [src/device.o] Error 1
+src/subdir.mk:39: recipe for target 'src/device.o' failed
+12:16:40 **** Clean-only build of configuration linux-armv7 for project ftd2xxj-native ****
+make clean 
+rm -rf  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o  ./src/device.d ./src/deviceDescriptor.d ./src/eeprom.d ./src/error.d ./src/ftd2xxj.d ./src/logger.d ./src/port.d ./src/service.d  libftd2xxj-native.so
+ 
+12:16:50 **** Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building file: ../src/device.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/device.d" -MT"src/device.d" -o "src/device.o" "../src/device.c"
+Finished building: ../src/device.c
+ 
+Building file: ../src/deviceDescriptor.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/deviceDescriptor.d" -MT"src/deviceDescriptor.d" -o "src/deviceDescriptor.o" "../src/deviceDescriptor.c"
+Finished building: ../src/deviceDescriptor.c
+ 
+Building file: ../src/eeprom.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
+Finished building: ../src/eeprom.c
+ 
+Building file: ../src/error.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/error.d" -MT"src/error.d" -o "src/error.o" "../src/error.c"
+Finished building: ../src/error.c
+ 
+Building file: ../src/ftd2xxj.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/ftd2xxj.d" -MT"src/ftd2xxj.d" -o "src/ftd2xxj.o" "../src/ftd2xxj.c"
+../src/ftd2xxj.c: In function ‘ToJavaHandle’:
+../src/ftd2xxj.c:15:12: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     return (jlong)handle;
+            ^
+Finished building: ../src/ftd2xxj.c
+ 
+Building file: ../src/logger.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/logger.d" -MT"src/logger.d" -o "src/logger.o" "../src/logger.c"
+Finished building: ../src/logger.c
+ 
+Building file: ../src/port.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/port.d" -MT"src/port.d" -o "src/port.o" "../src/port.c"
+Finished building: ../src/port.c
+ 
+Building file: ../src/service.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/service.d" -MT"src/service.d" -o "src/service.o" "../src/service.c"
+Finished building: ../src/service.c
+ 
+Building target: libftd2xxj-native.so
+Invoking: GCC C Linker
+gcc -L/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/ -L../external -L"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external" -Wl -Xlinker --no-undefined -shared -Wl,-soname=libftd2xxj-native.so.2 -o "libftd2xxj-native.so"  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o   -ljvm -lftd2xx
+gcc: error: unrecognized command line option ‘-Wl’
+makefile:30: recipe for target 'libftd2xxj-native.so' failed
+make: *** [libftd2xxj-native.so] Error 1
+12:18:07 **** Clean-only build of configuration linux-armv7 for project ftd2xxj-native ****
+make clean 
+rm -rf  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o  ./src/device.d ./src/deviceDescriptor.d ./src/eeprom.d ./src/error.d ./src/ftd2xxj.d ./src/logger.d ./src/port.d ./src/service.d  libftd2xxj-native.so
+ 
+12:18:15 **** Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building file: ../src/device.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/device.d" -MT"src/device.d" -o "src/device.o" "../src/device.c"
+Finished building: ../src/device.c
+ 
+Building file: ../src/deviceDescriptor.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/deviceDescriptor.d" -MT"src/deviceDescriptor.d" -o "src/deviceDescriptor.o" "../src/deviceDescriptor.c"
+Finished building: ../src/deviceDescriptor.c
+ 
+Building file: ../src/eeprom.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
+Finished building: ../src/eeprom.c
+ 
+Building file: ../src/error.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/error.d" -MT"src/error.d" -o "src/error.o" "../src/error.c"
+Finished building: ../src/error.c
+ 
+Building file: ../src/ftd2xxj.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/ftd2xxj.d" -MT"src/ftd2xxj.d" -o "src/ftd2xxj.o" "../src/ftd2xxj.c"
+../src/ftd2xxj.c: In function ‘ToJavaHandle’:
+../src/ftd2xxj.c:15:12: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     return (jlong)handle;
+            ^
+Finished building: ../src/ftd2xxj.c
+ 
+Building file: ../src/logger.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/logger.d" -MT"src/logger.d" -o "src/logger.o" "../src/logger.c"
+Finished building: ../src/logger.c
+ 
+Building file: ../src/port.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/port.d" -MT"src/port.d" -o "src/port.o" "../src/port.c"
+Finished building: ../src/port.c
+ 
+Building file: ../src/service.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/service.d" -MT"src/service.d" -o "src/service.o" "../src/service.c"
+Finished building: ../src/service.c
+ 
+Building target: libftd2xxj-native.so
+Invoking: GCC C Linker
+gcc -L/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/ -L../external -L"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external" -Xlinker --no-undefined -shared -Wl,-soname=libftd2xxj-native.so.2 -o "libftd2xxj-native.so"  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o   -ljvm -lftd2xx
+/usr/bin/ld: cannot find -ljvm
+makefile:30: recipe for target 'libftd2xxj-native.so' failed
+collect2: error: ld returned 1 exit status
+make: *** [libftd2xxj-native.so] Error 1
+12:25:22 **** Incremental Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building target: libftd2xxj-native.so
+Invoking: GCC C Linker
+gcc -L/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/ -L/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/client -L../external -L"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external" -Xlinker --no-undefined -shared -Wl,-soname=libftd2xxj-native.so.2 -o "libftd2xxj-native.so"  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o   -ljvm -lftd2xx
+../external/libftd2xx.a(ftd2xx.o): In function `my_init':
+ftd2xx.c:(.text+0x186): undefined reference to `pthread_create'
+../external/libftd2xx.a(ftd2xx.o): In function `my_fini':
+ftd2xx.c:(.text+0x1d4): undefined reference to `pthread_join'
+../external/libftd2xx.a(ftd2xx.o): In function `DeviceMatch':
+ftd2xx.c:(.text+0x210): undefined reference to `dlopen'
+ftd2xx.c:(.text+0x224): undefined reference to `dlopen'
+ftd2xx.c:(.text+0x23c): undefined reference to `dlsym'
+ftd2xx.c:(.text+0x244): undefined reference to `dlerror'
+ftd2xx.c:(.text+0x26c): undefined reference to `dlclose'
+../external/libftd2xx.a(ftd2xx.o): In function `FTCommonOpen':
+ftd2xx.c:(.text+0x186a): undefined reference to `pthread_create'
+ftd2xx.c:(.text+0x1890): undefined reference to `pthread_create'
+ftd2xx.c:(.text+0x18c0): undefined reference to `pthread_create'
+../external/libftd2xx.a(ftd2xx.o): In function `FT_Close':
+ftd2xx.c:(.text+0x1bce): undefined reference to `pthread_join'
+ftd2xx.c:(.text+0x1bf6): undefined reference to `pthread_join'
+ftd2xx.c:(.text+0x1c3c): undefined reference to `pthread_join'
+../external/libftd2xx.a(io.o): In function `libusb_try_lock_events':
+io.c:(.text+0x8b8): undefined reference to `pthread_mutex_trylock'
+../external/libftd2xx.a(linux_netlink.o): In function `linux_netlink_start_event_monitor':
+linux_netlink.c:(.text+0x1b4): undefined reference to `pthread_create'
+../external/libftd2xx.a(linux_netlink.o): In function `linux_netlink_stop_event_monitor':
+linux_netlink.c:(.text+0x294): undefined reference to `pthread_join'
+../external/libftd2xx.a(threads_posix.o): In function `usbi_mutex_init_recursive':
+threads_posix.c:(.text+0x1c): undefined reference to `pthread_mutexattr_init'
+threads_posix.c:(.text+0x30): undefined reference to `pthread_mutexattr_settype'
+threads_posix.c:(.text+0x58): undefined reference to `pthread_mutexattr_destroy'
+collect2: error: ld returned 1 exit status
+makefile:30: recipe for target 'libftd2xxj-native.so' failed
+make: *** [libftd2xxj-native.so] Error 1
+12:35:30 **** Clean-only build of configuration linux-armv7 for project ftd2xxj-native ****
+make clean 
+rm -rf  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o  ./src/device.d ./src/deviceDescriptor.d ./src/eeprom.d ./src/error.d ./src/ftd2xxj.d ./src/logger.d ./src/port.d ./src/service.d  libftd2xxj-native.so
+ 
+12:35:53 **** Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building file: ../src/device.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/device.d" -MT"src/device.d" -o "src/device.o" "../src/device.c"
+Finished building: ../src/device.c
+ 
+Building file: ../src/deviceDescriptor.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/deviceDescriptor.d" -MT"src/deviceDescriptor.d" -o "src/deviceDescriptor.o" "../src/deviceDescriptor.c"
+Finished building: ../src/deviceDescriptor.c
+ 
+Building file: ../src/eeprom.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/eeprom.d" -MT"src/eeprom.d" -o "src/eeprom.o" "../src/eeprom.c"
+Finished building: ../src/eeprom.c
+ 
+Building file: ../src/error.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/error.d" -MT"src/error.d" -o "src/error.o" "../src/error.c"
+Finished building: ../src/error.c
+ 
+Building file: ../src/ftd2xxj.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/ftd2xxj.d" -MT"src/ftd2xxj.d" -o "src/ftd2xxj.o" "../src/ftd2xxj.c"
+../src/ftd2xxj.c: In function ‘ToJavaHandle’:
+../src/ftd2xxj.c:15:12: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+     return (jlong)handle;
+            ^
+Finished building: ../src/ftd2xxj.c
+ 
+Building file: ../src/logger.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/logger.d" -MT"src/logger.d" -o "src/logger.o" "../src/logger.c"
+Finished building: ../src/logger.c
+ 
+Building file: ../src/port.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/port.d" -MT"src/port.d" -o "src/port.o" "../src/port.c"
+Finished building: ../src/port.c
+ 
+Building file: ../src/service.c
+Invoking: GCC C Compiler
+gcc -I/usr/lib/jvm/java-7-openjdk-armhf/include -I/usr/lib/jvm/java-7-openjdk-armhf/include/linux -I"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external/include" -O0 -Wall -c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe -MMD -MP -MF"src/service.d" -MT"src/service.d" -o "src/service.o" "../src/service.c"
+Finished building: ../src/service.c
+ 
+Building target: libftd2xxj-native.so
+Invoking: GCC C Linker
+gcc -L/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/ -L/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/client -L../external -L"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external" -Xlinker --no-undefined -shared -Wl,-soname=libftd2xxj-native.so.2 -o "libftd2xxj-native.so"  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o   -ljvm -lftd2xx
+../external/libftd2xx.a(ftd2xx.o): In function `my_init':
+ftd2xx.c:(.text+0x186): undefined reference to `pthread_create'
+../external/libftd2xx.a(ftd2xx.o): In function `my_fini':
+ftd2xx.c:(.text+0x1d4): undefined reference to `pthread_join'
+../external/libftd2xx.a(ftd2xx.o): In function `DeviceMatch':
+ftd2xx.c:(.text+0x210): undefined reference to `dlopen'
+ftd2xx.c:(.text+0x224): undefined reference to `dlopen'
+ftd2xx.c:(.text+0x23c): undefined reference to `dlsym'
+ftd2xx.c:(.text+0x244): undefined reference to `dlerror'
+ftd2xx.c:(.text+0x26c): undefined reference to `dlclose'
+../external/libftd2xx.a(ftd2xx.o): In function `FTCommonOpen':
+ftd2xx.c:(.text+0x186a): undefined reference to `pthread_create'
+ftd2xx.c:(.text+0x1890): undefined reference to `pthread_create'
+ftd2xx.c:(.text+0x18c0): undefined reference to `pthread_create'
+../external/libftd2xx.a(ftd2xx.o): In function `FT_Close':
+ftd2xx.c:(.text+0x1bce): undefined reference to `pthread_join'
+ftd2xx.c:(.text+0x1bf6): undefined reference to `pthread_join'
+ftd2xx.c:(.text+0x1c3c): undefined reference to `pthread_join'
+../external/libftd2xx.a(io.o): In function `libusb_try_lock_events':
+io.c:(.text+0x8b8): undefined reference to `pthread_mutex_trylock'
+../external/libftd2xx.a(linux_netlink.o): In function `linux_netlink_start_event_monitor':
+linux_netlink.c:(.text+0x1b4): undefined reference to `pthread_create'
+../external/libftd2xx.a(linux_netlink.o): In function `linux_netlink_stop_event_monitor':
+linux_netlink.c:(.text+0x294): undefined reference to `pthread_join'
+../external/libftd2xx.a(threads_posix.o): In function `usbi_mutex_init_recursive':
+threads_posix.c:(.text+0x1c): undefined reference to `pthread_mutexattr_init'
+threads_posix.c:(.text+0x30): undefined reference to `pthread_mutexattr_settype'
+threads_posix.c:(.text+0x58): undefined reference to `pthread_mutexattr_destroy'
+collect2: error: ld returned 1 exit status
+makefile:30: recipe for target 'libftd2xxj-native.so' failed
+make: *** [libftd2xxj-native.so] Error 1
+12:38:57 **** Incremental Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building target: libftd2xxj-native.so
+Invoking: GCC C Linker
+gcc -L/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/ -L/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/client -L../external -L"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external" -Xlinker --no-undefined -shared -Wl,-soname=libftd2xxj-native.so.2 -o "libftd2xxj-native.so"  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o   -ljvm -lftd2xx
+../external/libftd2xx.a(ftd2xx.o): In function `my_init':
+ftd2xx.c:(.text+0x186): undefined reference to `pthread_create'
+makefile:30: recipe for target 'libftd2xxj-native.so' failed
+../external/libftd2xx.a(ftd2xx.o): In function `my_fini':
+ftd2xx.c:(.text+0x1d4): undefined reference to `pthread_join'
+../external/libftd2xx.a(ftd2xx.o): In function `DeviceMatch':
+ftd2xx.c:(.text+0x210): undefined reference to `dlopen'
+ftd2xx.c:(.text+0x224): undefined reference to `dlopen'
+ftd2xx.c:(.text+0x23c): undefined reference to `dlsym'
+ftd2xx.c:(.text+0x244): undefined reference to `dlerror'
+ftd2xx.c:(.text+0x26c): undefined reference to `dlclose'
+../external/libftd2xx.a(ftd2xx.o): In function `FTCommonOpen':
+ftd2xx.c:(.text+0x186a): undefined reference to `pthread_create'
+ftd2xx.c:(.text+0x1890): undefined reference to `pthread_create'
+ftd2xx.c:(.text+0x18c0): undefined reference to `pthread_create'
+../external/libftd2xx.a(ftd2xx.o): In function `FT_Close':
+ftd2xx.c:(.text+0x1bce): undefined reference to `pthread_join'
+ftd2xx.c:(.text+0x1bf6): undefined reference to `pthread_join'
+ftd2xx.c:(.text+0x1c3c): undefined reference to `pthread_join'
+../external/libftd2xx.a(io.o): In function `libusb_try_lock_events':
+io.c:(.text+0x8b8): undefined reference to `pthread_mutex_trylock'
+../external/libftd2xx.a(linux_netlink.o): In function `linux_netlink_start_event_monitor':
+linux_netlink.c:(.text+0x1b4): undefined reference to `pthread_create'
+../external/libftd2xx.a(linux_netlink.o): In function `linux_netlink_stop_event_monitor':
+linux_netlink.c:(.text+0x294): undefined reference to `pthread_join'
+../external/libftd2xx.a(threads_posix.o): In function `usbi_mutex_init_recursive':
+threads_posix.c:(.text+0x1c): undefined reference to `pthread_mutexattr_init'
+threads_posix.c:(.text+0x30): undefined reference to `pthread_mutexattr_settype'
+threads_posix.c:(.text+0x58): undefined reference to `pthread_mutexattr_destroy'
+collect2: error: ld returned 1 exit status
+make: *** [libftd2xxj-native.so] Error 1
+12:39:54 **** Incremental Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+Building target: libftd2xxj-native.so
+Invoking: GCC C Linker
+gcc -L/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/ -L/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/client -L../external -L"/home/pi/eclipseFTD2XXJ/ftd2xxj-native/external" -Xlinker --no-undefined -shared -Wl,-soname=libftd2xxj-native.so.2 -o "libftd2xxj-native.so"  ./src/device.o ./src/deviceDescriptor.o ./src/eeprom.o ./src/error.o ./src/ftd2xxj.o ./src/logger.o ./src/port.o ./src/service.o   -ljvm -lftd2xx
+Finished building target: libftd2xxj-native.so
+ 
+12:58:37 **** Incremental Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:53 **** Incremental Build of configuration linux-armv7 for project ftd2xxj-native ****
+make all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?fileVersion 3.1.0?>
+
+<ManagedProjectBuildInfo>
+<project id="ftd_table.cdt.managedbuild.target.gnu.so.2059775762" name="Shared Library (Gnu)" projectType="cdt.managedbuild.target.gnu.so">
+<configuration artifactExtension="so.${version}" artifactName="${ProjName}" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.so.release.1708959652" name="release-ia32" parent="cdt.managedbuild.config.gnu.so.release">
+<toolChain id="cdt.managedbuild.toolchain.gnu.so.release.2073470441" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.so.release">
+<builder id="cdt.managedbuild.target.gnu.builder.so.release.1529241793" name="Gnu Make.Release" superClass="cdt.managedbuild.target.gnu.builder.so.release"/>
+<tool id="cdt.managedbuild.tool.gnu.c.compiler.so.release.777514595" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.release">
+<option id="gnu.c.compiler.option.misc.ansi.1468560921" superClass="gnu.c.compiler.option.misc.ansi" value="true" valueType="boolean"/>
+<option id="gnu.c.compiler.option.misc.other.31241002" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -m32" valueType="string"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.so.release.1129890614" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.so.release"/>
+<tool id="cdt.managedbuild.tool.gnu.c.linker.so.release.290092071" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.so.release">
+<option id="gnu.c.link.option.soname.324058486" superClass="gnu.c.link.option.soname" value="${soname}" valueType="string"/>
+<option id="gnu.c.link.option.ldflags.132446781" superClass="gnu.c.link.option.ldflags" value="-m32" valueType="string"/>
+</tool>
+<tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.release.1498964686" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.release"/>
+<tool id="cdt.managedbuild.tool.gnu.assembler.so.release.1066729970" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.so.release"/>
+<macros expandEnvironmentMacros="true"/>
+</toolChain>
+</configuration>
+<macros>
+<stringMacro name="soname" type="VALUE_TEXT" value="${BuildArtifactFileBaseName}.so.${majorVersion}"/>
+<stringMacro name="majorVersion" type="VALUE_TEXT" value="1"/>
+<stringMacro name="minorVersion" type="VALUE_TEXT" value="1"/>
+<stringMacro name="version" type="VALUE_TEXT" value="${majorVersion}.${minorVersion}"/>
+</macros>
+</project>
+</ManagedProjectBuildInfo>

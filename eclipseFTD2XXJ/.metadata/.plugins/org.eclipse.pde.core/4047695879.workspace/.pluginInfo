@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="394" localization="OSGI-INF/l10n/bundle" name="ftd2xxj - linux_x86" project="com.ftdichip.ftd2xx.linux.x86" provider="brainchild GmbH">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="395" localization="OSGI-INF/l10n/bundle" name="com.ftdichip.ftd2xx.win32.x86" project="com.ftdichip.ftd2xx.win32.x86" provider="brainchild GmbH">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="396" localization="OSGI-INF/l10n/bundle" name="com.ftdichip.ftd2xx" project="com.ftdichip.ftd2xx" provider="brainchild GmbH">
+		<library name="."/>
+		<library name="resources/bundles/en/"/>
+		<library name="resources/bundles/de/"/>
+	</bundle>
+	<bundle bundleID="397" localization="OSGI-INF/l10n/bundle" name="Util" project="javax.util"/>
+</map>

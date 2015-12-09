@@ -1,0 +1,12 @@
+source.. = src/
+output.. = bin/
+bin.includes = META-INF/,\
+               .,\
+               os/linux/x86/libftd2xxj.so,\
+               license.html
+src.includes = .settings/,\
+               META-INF/,\
+               build.properties,\
+               os/linux/x86/libftd2xxj.so,\
+               license.html,\
+               src/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://ftd2xxj.sf.net/updates/">
+      Sourceforge update site.
+   </description>
+   <feature url="features/com.ftdichip.ftd2xx_3.0.0.jar" id="com.ftdichip.ftd2xx" version="3.0.0">
+      <category name="ftd2xxj"/>
+   </feature>
+   <category-def name="ftd2xxj" label="ftd2xxj">
+      <description>
+         Provides the core plug-ins of the ftd2xxj framework (see http://ftd2xxj.sf.net).
+      </description>
+   </category-def>
+</site>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;p5ftd2xxjtest.P5FTD2XXJTest&apos; to &apos;LEDPanelBuffer&apos;&#x0A;- Original project: &apos;P5FTD2XXJTest&apos;&#x0A;- Original element: &apos;p5ftd2xxjtest.P5FTD2XXJTest&apos;&#x0A;- Renamed element: &apos;p5ftd2xxjtest.LEDPanelBuffer&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;P5FTD2XXJTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;p5ftd2xxjtest{P5FTD2XXJTest.java[P5FTD2XXJTest" matchStrategy="1" name="LEDPanelBuffer" qualified="false" references="true" similarDeclarations="false" stamp="1449681908419" textual="false" version="1.0"/>
+</session>

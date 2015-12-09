@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="/usr/local/lib/processing-3.0.1/java" version="1.8.0_51">
+<bootpath>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/resources.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/rt.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/sunrsasign.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/jsse.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/jce.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/charsets.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/jfr.jar"/>
+<entry path="/usr/local/lib/processing-3.0.1/java/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/local/lib/processing-3.0.1/java/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/usr/lib/jvm/java-7-openjdk-armhf" version="1.7.0_85">
+<bootpath>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/resources.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/rt.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/sunrsasign.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/jsse.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/jce.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/charsets.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/rhino.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/jfr.jar"/>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

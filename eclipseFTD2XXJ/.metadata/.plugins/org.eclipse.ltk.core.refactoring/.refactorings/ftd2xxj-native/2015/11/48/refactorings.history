@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;external&apos;&#x0A;- Original project: &apos;ftd2xxj-native&apos;&#x0A;- Destination element: &apos;external&apos;&#x0A;- Original elements:&#x0A;     libftd2xx.a&#x0A;     libftd2xx.so.1.3.6&#x0A;- Update references to refactored element" description="Move files" element1="external/include/libftd2xx.a" element2="external/include/libftd2xx.so.1.3.6" files="2" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1448537717037" target="external" units="0" version="1.0"/>
+</session>

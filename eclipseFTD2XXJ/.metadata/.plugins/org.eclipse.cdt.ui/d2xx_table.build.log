@@ -1,0 +1,11 @@
+11:22:54 **** Build of configuration release-ia32 for project d2xx_table ****
+make all 
+Building file: ../d2xx_debug.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -m32 -ansi -MMD -MP -MF"d2xx_debug.d" -MT"d2xx_debug.d" -o "d2xx_debug.o" "../d2xx_debug.c"
+gcc: error: unrecognized command line option ‘-m32’
+subdir.mk:24: recipe for target 'd2xx_debug.o' failed
+make: *** [d2xx_debug.o] Error 1
+
+11:22:54 Build Finished (took 409ms)
+
