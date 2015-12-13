@@ -1,0 +1,45 @@
+################################################################################
+# Script to install all d2xx_table API libraries and files.                    #
+################################################################################
+
+#!/bin/bash
+
+INCLUDE_PATH=/usr/local/include/
+LIBRARY_PATH=/usr/local/lib 
+
+CP_OPTIONS="-v"
+LN_OPTIONS="-s -v"
+LD_CONFIG_OPTIONS="-v -n $LIBRARY_PATH"
+CHMOD_OPTIONS="u+rw,u-x,go-wx"
+
+LIBRARY_NAME=libd2xx_table.so
+
+################################################################################
+# Copy files                                                                   #
+################################################################################
+echo "Copy files ..."
+cp $CP_OPTIONS $LIBRARY_NAME.* $LIBRARY_PATH
+
+################################################################################
+# Update file attributes.                                                      #
+################################################################################
+chmod $CHMOD_OPTIONS $LIBRARY_PATH/$LIBRARY_NAME*;
+
+################################################################################
+# Initialize system                                                            #
+################################################################################
+echo "Update library dependencies ..."
+/sbin/ldconfig $LD_CONFIG_OPTIONS | grep $LIBRARY_NAME
+
+################################################################################
+# Update library links.                                                        #
+################################################################################
+echo "Create symbolic links ..."
+#for NAME in `ls -R | grep "$LIBRARY_NAME." | awk --field-separator . '{print $1 "." $2 "." $3}'` ; do
+#    NEW_NAME=` echo $NAME | awk --field-separator . '{print $1 "." $2}'` ;
+#    ln $LN_OPTIONS $LIBRARY_PATH/$NAME $LIBRARY_PATH/$NEW_NAME ; 
+#done;
+for NAME in `ls -R | grep "$LIBRARY_NAME." | awk --field-separator . '{print $1 "." $2 "." $3}'` ; do
+    ln $LN_OPTIONS $LIBRARY_PATH/$NAME $LIBRARY_PATH/$LIBRARY_NAME; 
+done;
+

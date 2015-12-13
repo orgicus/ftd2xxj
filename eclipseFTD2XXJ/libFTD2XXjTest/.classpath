@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.0%Foundation-1.0"/>
+	<classpathentry kind="lib" path="lib/ftd2xxj-2.1-resources_de.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="libFTD2XXjTest/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/ftd2xxj-2.1-resources.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="libFTD2XXjTest/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/FTD2XXj.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="libFTD2XXjTest/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/javax.util.property-2_0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

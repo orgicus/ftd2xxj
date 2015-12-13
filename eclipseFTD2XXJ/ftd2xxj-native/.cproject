@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.config.gnu.so.release.1577916605">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.so.release.1577916605" moduleId="org.eclipse.cdt.core.settings" name="linux-i386">
+				<macros>
+					<stringMacro name="MINOR_VERSION" type="VALUE_TEXT" value="1"/>
+					<stringMacro name="MAJOR_VERSION" type="VALUE_TEXT" value="2"/>
+				</macros>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ftd2xxj-native"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ftd2xxj-native/linux-i386"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ftd2xxj" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="so" artifactName="ftd2xxj" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="Linux release i386" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.so.release.1577916605" name="linux-i386" parent="cdt.managedbuild.config.gnu.so.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.so.release.1577916605.566853924" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.so.release.175311778" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.so.release">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.so.release.738589336" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.so.release"/>
+							<builder buildPath="${workspace_loc:/ftd2xxj-native}/linux-i386" id="cdt.managedbuild.target.gnu.builder.so.release.359097976" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.so.release"/>
+							<tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.c.compiler.so.release.1213345422" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.release">
+								<option id="gnu.c.compiler.option.include.paths.2127997070" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/java-7-openjdk-armhf/include/"/>
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/java-7-openjdk-armhf/include/linux"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external/include}&quot;"/>
+									<listOptionValue builtIn="false" value="${ProjDirPath}/external/include"/>
+								</option>
+								<option id="gnu.c.compiler.so.release.option.optimization.level.209269007" name="Optimization Level" superClass="gnu.c.compiler.so.release.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.so.release.option.debugging.level.1770964349" name="Debug Level" superClass="gnu.c.compiler.so.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.557374613" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fPIC -march=armv7-a -mfpu=vfp -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe" valueType="string"/>
+								<option id="gnu.c.compiler.option.dialect.std.557681281" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1481126871" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.so.release.941632865" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.so.release">
+								<option id="gnu.cpp.compiler.so.release.option.optimization.level.218633909" name="Optimization Level" superClass="gnu.cpp.compiler.so.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.so.release.option.debugging.level.1091005958" name="Debug Level" superClass="gnu.cpp.compiler.so.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.so.release.1272532816" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.so.release">
+								<option id="gnu.c.link.option.libs.928365174" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="jvm"/>
+									<listOptionValue builtIn="false" value="ftd2xx"/>
+								</option>
+								<option id="gnu.c.link.option.paths.845336465" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="stringList">
+									<listOptionValue builtIn="false" value="../external"/>
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/"/>
+								</option>
+								<option id="gnu.c.link.option.other.581590942" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="--no-undefined"/>
+								</option>
+								<option id="gnu.c.link.option.soname.1434860579" name="Shared object name (-Wl,-soname=)" superClass="gnu.c.link.option.soname" value="lib${BuildArtifactFileName}.${MAJOR_VERSION}" valueType="string"/>
+								<option id="gnu.c.link.option.ldflags.1745696741" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-Wl" valueType="string"/>
+								<option defaultValue="true" id="gnu.c.link.so.release.option.shared.1559531564" name="Shared (-shared)" superClass="gnu.c.link.so.release.option.shared" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.731511173" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.release.1651399236" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.release">
+								<option defaultValue="true" id="gnu.cpp.link.so.release.option.shared.2135977909" name="Shared (-shared)" superClass="gnu.cpp.link.so.release.option.shared" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.so.release.783724670" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.so.release">
+								<option id="gnu.both.asm.option.include.paths.1498935205" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath"/>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.752880724" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.230996344" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.so.release.1577916605./ftd2xxj-native/external/include/windows/ftd2xx.h" name="ftd2xx.h" rcbsApplicability="disable" resourcePath="external/include/windows/ftd2xx.h" toolsToInvoke="">
+						<tool announcement="" command="" customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1104318777" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.104518128" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.1975410168" name="Resource Custom Build Step Output Type" outputNames=""/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.so.release.1577916605./ftd2xxj-native/external/include/linux/ftd2xx.h" name="ftd2xx.h" rcbsApplicability="disable" resourcePath="external/include/linux/ftd2xx.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry excluding="external/include/windows/ftd2xx.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.cygwin.so.release.465185878">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cygwin.so.release.465185878" moduleId="org.eclipse.cdt.core.settings" name="win32">
+				<macros>
+					<stringMacro name="MINOR_VERSION" type="VALUE_TEXT" value="1"/>
+					<stringMacro name="MAJOR_VERSION" type="VALUE_TEXT" value="2"/>
+				</macros>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ftd2xxj-native"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ftd2xxj-native/win32"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ftd2xxj" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.Cygwin_PE" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="dll" artifactName="ftd2xxj" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="Win32 release" errorParsers="org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GASErrorParser" id="cdt.managedbuild.config.gnu.cygwin.so.release.465185878" name="win32" parent="cdt.managedbuild.config.gnu.cygwin.so.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.so.release.465185878.485092217" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cygwin.so.release.952709655" name="GCC Tool Chain" superClass="cdt.managedbuild.toolchain.gnu.cygwin.so.release">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.cygwin.so.release.1570349140" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.cygwin.so.release"/>
+							<builder buildPath="${workspace_loc:/ftd2xxj-native}/win32" id="cdt.managedbuild.target.gnu.builder.cygwin.so.release.1050033957" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.cygwin.so.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release.451315145" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release">
+								<option id="gnu.c.compiler.option.include.paths.560130867" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../external/include"/>
+									<listOptionValue builtIn="false" value="${JDK_HOME}/include"/>
+									<listOptionValue builtIn="false" value="${JDK_HOME}/include/win32"/>
+								</option>
+								<option id="gnu.c.compiler.cygwin.so.release.option.optimization.level.194715688" name="Optimization Level" superClass="gnu.c.compiler.cygwin.so.release.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.verbose.1074662502" name="Verbose (-v)" superClass="gnu.c.compiler.option.misc.verbose" value="false" valueType="boolean"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.941454034" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_WINDOWS"/>
+								</option>
+								<option id="gnu.c.compiler.cygwin.so.release.option.debugging.level.2005719224" name="Debug Level" superClass="gnu.c.compiler.cygwin.so.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.853742430" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.cygwin"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.release.1884005820" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.cygwin.so.release">
+								<option id="gnu.cpp.compiler.cygwin.so.release.option.optimization.level.1261643156" name="Optimization Level" superClass="gnu.cpp.compiler.cygwin.so.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.cygwin.so.release.option.debugging.level.731957838" name="Debug Level" superClass="gnu.cpp.compiler.cygwin.so.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.cygwin.so.release.518369341" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.cygwin.so.release">
+								<option id="gnu.c.link.option.libs.1080270372" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="ftd2xx"/>
+								</option>
+								<option id="gnu.c.link.option.paths.1215362177" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="stringList">
+									<listOptionValue builtIn="false" value="../external"/>
+								</option>
+								<option id="gnu.c.link.option.other.1609533931" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="--add-stdcall-alias"/>
+									<listOptionValue builtIn="false" value="--major-image-version=${MAJOR_VERSION}"/>
+									<listOptionValue builtIn="false" value="--minor-image-version=${MINOR_VERSION}"/>
+								</option>
+								<option defaultValue="true" id="gnu.c.link.cygwin.so.release.option.shared.705228721" name="Shared (-shared)" superClass="gnu.c.link.cygwin.so.release.option.shared" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.734708736" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.so.release.1226615370" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.cygwin.so.release">
+								<option defaultValue="true" id="gnu.cpp.link.cygwin.so.release.option.shared.73355003" name="Shared (-shared)" superClass="gnu.cpp.link.cygwin.so.release.option.shared" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.cygwin.so.release.1278412721" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.cygwin.so.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.764554352" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.cygwin.base.1951888485" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.cygwin.base"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.release.465185878./ftd2xxj-native/external/include/linux/WinTypes.h" name="WinTypes.h" rcbsApplicability="disable" resourcePath="external/include/linux/WinTypes.h" toolsToInvoke="">
+						<tool announcement="" command="" customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1812075452" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.887988364" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.161180643" name="Resource Custom Build Step Output Type" outputNames=""/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cygwin.so.release.465185878./ftd2xxj-native/external/include/linux/ftd2xx.h" name="ftd2xx.h" rcbsApplicability="disable" resourcePath="external/include/linux/ftd2xx.h" toolsToInvoke="">
+						<tool announcement="" command="" customBuildStep="true" id="org.eclipse.cdt.managedbuilder.ui.rcbs.1984457666" name="Resource Custom Build Step">
+							<inputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.inputtype.1476507444" name="Resource Custom Build Step Input Type">
+								<additionalInput kind="additionalinputdependency" paths=""/>
+							</inputType>
+							<outputType id="org.eclipse.cdt.managedbuilder.ui.rcbs.outputtype.249690418" name="Resource Custom Build Step Output Type" outputNames=""/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry excluding="external/include/linux/WinTypes.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.config.gnu.so.release.912821237">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.so.release.912821237" moduleId="org.eclipse.cdt.core.settings" name="linux-armv7">
+				<macros>
+					<stringMacro name="MINOR_VERSION" type="VALUE_TEXT" value="1"/>
+					<stringMacro name="MAJOR_VERSION" type="VALUE_TEXT" value="2"/>
+				</macros>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/ftd2xxj-native"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="libraryPath" name="/ftd2xxj-native/linux-armv7"/>
+						<entry flags="RESOLVED" kind="libraryFile" name="ftd2xxj-native" srcPrefixMapping="" srcRootPath=""/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="so" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.sharedLib" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.sharedLib" cleanCommand="rm -rf" description="Linux arm-v7" id="cdt.managedbuild.config.gnu.so.release.912821237" name="linux-armv7" parent="cdt.managedbuild.config.gnu.so.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.so.release.912821237." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.so.release.1147839510" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.so.release">
+							<targetPlatform id="cdt.managedbuild.target.gnu.platform.so.release.1237343770" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.so.release"/>
+							<builder buildPath="${workspace_loc:/ftd2xxj-native}/linux-armv7" id="cdt.managedbuild.target.gnu.builder.so.release.306757004" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.so.release"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.626403152" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.so.release.488356331" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.so.release">
+								<option id="gnu.cpp.compiler.so.release.option.optimization.level.1947559814" name="Optimization Level" superClass="gnu.cpp.compiler.so.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.so.release.option.debugging.level.757460601" name="Debug Level" superClass="gnu.cpp.compiler.so.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.so.release.668347564" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.so.release">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.so.release.option.optimization.level.2130068068" name="Optimization Level" superClass="gnu.c.compiler.so.release.option.optimization.level" value="gnu.c.optimization.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.so.release.option.debugging.level.211194726" name="Debug Level" superClass="gnu.c.compiler.so.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.dialect.std.73686122" name="Language standard" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.584995140" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/java-7-openjdk-armhf/include"/>
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/java-7-openjdk-armhf/include/linux"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external/include}&quot;"/>
+								</option>
+								<option id="gnu.c.compiler.option.misc.other.953001947" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -fPIC -march=armv7-a -mfloat-abi=hard -ftree-vectorize -Wno-psabi -pipe" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1296537645" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.so.release.1893116149" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.so.release">
+								<option defaultValue="true" id="gnu.c.link.so.release.option.shared.647679719" name="Shared (-shared)" superClass="gnu.c.link.so.release.option.shared" valueType="boolean"/>
+								<option id="gnu.c.link.option.libs.1322363483" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="jvm"/>
+									<listOptionValue builtIn="false" value="ftd2xx"/>
+								</option>
+								<option id="gnu.c.link.option.paths.1159395021" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/java-7-openjdk-armhf/jre/lib/arm/client/"/>
+									<listOptionValue builtIn="false" value="/usr/lib/jvm/jdk-8-oracle-arm-vfp-hflt/jre/lib/arm/client"/>
+									<listOptionValue builtIn="false" value="../external"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/external}&quot;"/>
+								</option>
+								<option id="gnu.c.link.option.other.1341822552" name="Other options (-Xlinker [option])" superClass="gnu.c.link.option.other" valueType="stringList">
+									<listOptionValue builtIn="false" value="--no-undefined"/>
+								</option>
+								<option id="gnu.c.link.option.ldflags.1893733764" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="" valueType="string"/>
+								<option id="gnu.c.link.option.soname.280652857" name="Shared object name (-Wl,-soname=)" superClass="gnu.c.link.option.soname" value="lib${BuildArtifactFileName}.${MAJOR_VERSION}" valueType="string"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.995011464" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.so.release.1175327711" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.so.release">
+								<option defaultValue="true" id="gnu.cpp.link.so.release.option.shared.392561365" name="Shared (-shared)" superClass="gnu.cpp.link.so.release.option.shared" valueType="boolean"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.so.release.1461163946" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.so.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1856546377" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ftd2xxj-native.cdt.managedbuild.target.gnu.so.377947886" name="Shared Library (Gnu)" projectType="cdt.managedbuild.target.gnu.so"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="linux-armv7">
+			<resource resourceType="PROJECT" workspacePath="/ftd2xxj-native"/>
+		</configuration>
+		<configuration configurationName="linux-i386">
+			<resource resourceType="PROJECT" workspacePath="/ftd2xxj-native"/>
+		</configuration>
+		<configuration configurationName="win32">
+			<resource resourceType="PROJECT" workspacePath="/ftd2xxj-native"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.so.release.465185878;cdt.managedbuild.config.gnu.cygwin.so.release.465185878.485092217;cdt.managedbuild.tool.gnu.c.compiler.cygwin.so.release.451315145;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.853742430">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.so.release.1577916605;cdt.managedbuild.config.gnu.so.release.1577916605.566853924;cdt.managedbuild.tool.gnu.c.compiler.so.release.1213345422;cdt.managedbuild.tool.gnu.c.compiler.input.1481126871">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

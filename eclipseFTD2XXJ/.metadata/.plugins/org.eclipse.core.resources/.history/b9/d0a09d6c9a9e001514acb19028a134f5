@@ -1,0 +1,174 @@
+package p5ftd2xxjtest;
+
+import com.ftdichip.ftd2xx.DataBits;
+import com.ftdichip.ftd2xx.Device;
+import com.ftdichip.ftd2xx.DeviceType;
+import com.ftdichip.ftd2xx.FTD2xxException;
+import com.ftdichip.ftd2xx.Parity;
+import com.ftdichip.ftd2xx.Port;
+import com.ftdichip.ftd2xx.Service;
+import com.ftdichip.ftd2xx.StopBits;
+
+import processing.core.PApplet;
+import processing.core.PGraphics;
+import processing.core.PImage;
+
+public class LEDPanelBuffer extends PApplet {
+		
+	private Device dev1;
+	private Device dev2;
+	
+	private final int S = 5;
+	private final int W = 96;
+	private final int H = 16;
+	private final int NP = W*H;
+	
+	private final int HEADER_LEN = 9;
+	private final int LEN = 1536+HEADER_LEN;
+	
+	private byte[] packet = new byte[LEN];
+	
+	private PGraphics buffer;
+	private PImage brush;
+	
+	private boolean testMode = false;
+	
+	public void setup() {
+		size(W*S,H*S,JAVA2D);noSmooth();
+		buffer = createGraphics(W, H);
+		buffer.beginDraw();
+		buffer.background(0);buffer.noStroke();buffer.fill(127);
+		buffer.endDraw();
+		brush = getGradientImg(8,8,120,100,64);
+		//setup header
+		packet[0] = (byte)0xFF;
+		packet[3] = (byte)0x01;
+		
+		try {
+			Device[] devices = Service.listDevicesByType(DeviceType.FT_DEVICE_UNKNOWN);
+			if(devices.length > 0){
+				dev1 = devices[0];
+				try{
+					dev1.open();
+					Port port = dev1.getPort();
+					port.setBaudRate(4000000);
+					port.setDataCharacteristics(DataBits.DATA_BITS_8, StopBits.STOP_BITS_2, Parity.NONE);
+				}catch(Exception e){
+					System.out.println("caught:");
+					e.printStackTrace();
+				}
+				dev2 = devices[1];
+				try{
+					dev2.open();
+					Port port = dev2.getPort();
+					port.setBaudRate(4000000);
+					port.setDataCharacteristics(DataBits.DATA_BITS_8, StopBits.STOP_BITS_2, Parity.NONE);
+				}catch(Exception e){
+					System.out.println("caught:");
+					e.printStackTrace();
+				}
+			}
+		} catch (FTD2xxException e) {
+			e.printStackTrace();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	public void draw() {
+		buffer.beginDraw();
+			if(!testMode){
+				buffer.fill(0,10);
+				buffer.rect(0, 0, width, height);
+				if(mousePressed){
+					//buffer.ellipse(mouseX/S,mouseY/S,5,5);
+					buffer.image(brush,mouseX/S-brush.width/2,mouseY/S-brush.height/2);
+				}
+			}else{
+				buffer.background(0);
+				buffer.fill(254);
+				buffer.rect(0,0,mouseX/S,H);
+			}
+		buffer.endDraw();
+		
+		for (int i = 0; i < NP; i++) {
+			int mx = i % W;
+			int my = i / W;
+			int idx =  pointToIndex(mx, my, W);
+			idx = constrain(idx, 0, NP-1);
+			packet[HEADER_LEN+pointToIndex(my,W-1-mx,H)] = (byte)(min((int)brightness(buffer.pixels[idx]),254));
+		}
+		sendBytes();
+		
+		image(buffer, 0, 0, width, height);
+	}
+	public void mouseDragged(){
+	}
+
+	private void sendBytes() {
+		if(dev1 != null) {
+			try {
+				dev1.write(packet);
+			} catch (FTD2xxException e) {
+				e.printStackTrace();
+			}
+		}
+		if(dev2 != null) {
+			try {
+				dev2.write(packet);
+			} catch (FTD2xxException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	public void keyPressed(){
+		if(key == ' '){
+			clearData();
+			sendBytes();
+		}
+		if(key == 't') testMode = !testMode;
+	}
+	private void clearData(){
+		buffer.beginDraw();
+		buffer.background(0);
+		buffer.endDraw();
+		for (int i = 0; i < NP; i++) {
+			packet[HEADER_LEN+i] = (byte)0;
+		}
+	}
+	private int pointToIndex(int x,int y,int w){
+	    return y*w+x;
+	}
+	private PImage getGradientImg(int w,int h,int hue,int satMax,int brightness){
+	  pushStyle();//isolate drawing styles such as color Mode
+	    colorMode(HSB,360,100,100);
+	    PImage gradient = createImage(w,h,ARGB);//create an image with an alpha channel
+	    int np = w * h;//total number of pixels
+	    int cx = gradient.width/2;//center on x
+	    int cy = gradient.height/2;//center on y
+	    for(int i = 0 ; i < np; i++){//for each pixel
+	      int x = i%gradient.width;//compute x from pixel index
+	      int y = (int)(i/gradient.width);//compute y from pixel index
+	      float d = dist(x,y,cx,cy);//compute distance from centre to current pixel
+	      gradient.pixels[i] = color(hue,map(d,0,cx,satMax,0),brightness,map(d,0,cx,255,0));//map the saturation and transparency based on the distance to centre
+	    }
+	    gradient.filter(GRAY);
+	    gradient.updatePixels();//finally update all the pixels
+	  popStyle();
+	  return gradient;
+	}
+	public void stop(){
+		if(dev1 != null){
+			try {
+				dev1.close();
+			} catch (FTD2xxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		super.stop();
+	}
+	public static void main(String[] args) {
+		PApplet.main(LEDPanelBuffer.class.getCanonicalName());
+	}
+}

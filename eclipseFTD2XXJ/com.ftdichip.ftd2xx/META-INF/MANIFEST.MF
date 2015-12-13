@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.ftdichip.ftd2xx
+Bundle-SymbolicName: com.ftdichip.ftd2xx
+Bundle-Version: 3.0.0
+Bundle-Vendor: brainchild GmbH
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: .,
+ resources/bundles/en/,
+ resources/bundles/de/
+Export-Package: com.ftdichip.ftd2xx

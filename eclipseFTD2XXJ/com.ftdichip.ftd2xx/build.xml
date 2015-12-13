@@ -1,0 +1,141 @@
+<project name="com.ftdichip.ftd2xx" default="init-project" basedir=".">
+
+	<!-- create property holding environment variables -->
+	<property environment="env" />
+
+	<property name="company" value="brainchild GmbH" />
+
+	<property name="project.name" value="${ant.project.name}" />
+
+	<property name="src" value="src" description="Specifies the base source directory." />
+
+	<property name="bin" value="bin" description="Specifies the bin directory." />
+
+	<property name="target" value="target" description="Specifies the target directory." />
+
+	<property name="target.dist" value="${target}/dist" description="Specifies the distribution directory." />
+
+	<property name="target.docs" value="${target}/docs" description="Specifies the documentation directory." />
+
+	<property name="target.dist.include" value="${target.dist}/include" description="Specifies the include directory to place generated header files in." />
+
+	<property name="version" value="3.0" description="Specifies the current project version" />
+
+	<property name="application-prefix" value="ftd2xxj" description="Specifies the prefix of the application. This will be used e.g. for jar-file naming." />
+
+	<property name="application-doc-zip" value="${application-prefix}-${version}-doc.zip" description="Specifies the name and location of the application's main jar-file." />
+
+	<property name="PROJECT_HOME_PAGE" value="http://sourceforge.net/projects/ftd2xxj/docs/api" />
+
+
+
+	<!-- Build the CLASSPATH -->
+	<path id="project.classpath">
+		<dirset dir="${bin}"/>
+	</path>
+
+	<!-- make classpath available via property -->
+	<property name="project.classpath" refid="project.classpath" />
+
+	<target name="init-project" description="Creates the projects directory structure">
+
+		<mkdir dir="${target}" />
+		<mkdir dir="${target.dist}" />
+		<mkdir dir="${target.dist.include}" />
+	</target>
+
+	<target name="init" description="Initializes some time and date properties and prints out configuration data like the used JDK">
+		<!-- Create the time stamp -->
+		<tstamp>
+			<format property="date" pattern="dd-MMMM-yyyy" locale="en" />
+			<format property="time" pattern="HH:mm:ss" locale="en" />
+			<format property="year" pattern="yyyy" locale="en" />
+		</tstamp>
+
+		<!-- print configuration info -->		
+		<echo level="info">Start time: ${date} : ${time}</echo>
+		<echo level="info">ANT version: ${ant.version}</echo>
+		<echo level="info">ANT Java version: ${ant.java.version}</echo>
+		<echo level="info">Used JDK: ${java.home}</echo>
+		<echo level="info">!!! Be sure to use a Java SDK !!!</echo>
+		<echo level="info">Project classpath: ${project.classpath}</echo>
+	</target>
+
+	<target name="main" description="Builds all application and test classes, theire docs and deploys them to theire appropriate jars">
+		<antcall target="generate-jni" inheritrefs="true" />
+		<antcall target="export-plugin" inheritrefs="true" />
+		<antcall target="build-application-docs" />
+	</target>
+	
+	<target name="export-plugin">
+			<pde.exportPlugins destination="${target.dist}" exportSource="false" exportType="directory" plugins="${ant.project.name}" useJARFormat="true" />
+	</target>
+
+	<target name="build-application-docs">
+		<antcall target="clean-application-docs" inheritrefs="true" />
+		<antcall target="javadoc-application" inheritrefs="true" />
+	</target>
+
+	<!-- Cleans all generated files -->
+	<target name="clean-all">
+		<antcall target="clean-dist" inheritrefs="true" />
+		<antcall target="clean-jni" inheritrefs="true" />
+	</target>
+
+	<target name="clean-dist" description="Cleans all distributables.">
+		<antcall target="clean-jni" inheritrefs="true" />
+		<antcall target="clean-application-docs" inheritrefs="true" />
+
+		<delete includeEmptyDirs="true">
+			<fileset dir=".">
+				<include name="${target.dist}/*" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="clean-jni" description="Cleans the generated jni header files.">
+
+		<delete includeEmptyDirs="true">
+			<fileset dir=".">
+				<include name="${target.dist.include}/*" />
+			</fileset>
+		</delete>
+	</target>
+
+	<!-- Cleans the application's docs -->
+	<target name="clean-application-docs">
+		<delete includeEmptyDirs="true">
+			<fileset dir=".">
+				<include name="${target.docs}/**/*" />
+				<include name="${target.dist}/${application-doc-zip}" />
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="javadoc-application" depends="init" description="Generates the application's API documentation">
+		<javadoc destdir="${target.application.docs}" access="protected" source="1.5" use="true" notree="false" nonavbar="false" noindex="false" splitindex="true" author="true" version="true" nodeprecatedlist="false" nodeprecated="false" packagenames="*" sourcepath="${src.application}" classpathref="project.classpath" useexternalfile="yes">
+
+			<doctitle>
+				<![CDATA[
+	    	      	<h3>${project.name}</h3>
+                ]]>
+            </doctitle>
+
+		<link offline="true" href="http://java.sun.com/j2se/1.5.0/docs/api" packagelistLoc="${java.home}/docs/api" />
+	</javadoc>
+</target>
+
+<!-- Packages all application docs into a single zip-file prefixed with docs -->
+<target name="zip-application-docs">
+	<zip destfile="${target.dist}/${application-doc-zip}">
+		<zipfileset prefix="docs" dir="${target.application.docs}" />
+	</zip>
+</target>
+
+<target name="generate-jni" depends="init, clean-jni" description="Generates all JNI header files.">
+	<javah class="com.ftdichip.ftd2xx.Service" classpathref="project.classpath" destdir="${target.dist.include}" />
+	<javah class="com.ftdichip.ftd2xx.Device" classpathref="project.classpath" destdir="${target.dist.include}" />
+	<javah class="com.ftdichip.ftd2xx.EEPROM" classpathref="project.classpath" destdir="${target.dist.include}" />
+	<javah class="com.ftdichip.ftd2xx.Port" classpathref="project.classpath" destdir="${target.dist.include}" />
+</target>
+</project>

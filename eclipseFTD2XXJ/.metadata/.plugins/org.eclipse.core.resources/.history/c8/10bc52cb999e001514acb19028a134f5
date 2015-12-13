@@ -1,0 +1,17 @@
+package p5ftd2xxjtest;
+
+import processing.core.PApplet;
+
+
+public class P5FTD2XXJTest extends PApplet {
+
+	public void setup() {
+	}
+
+	public void draw() {
+	}
+	
+	public static void main(String _args[]) {
+		PApplet.main(new String[] { p5ftd2xxjtest.LEDPanelBuffer.class.getName() });
+	}
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="com.ftdichip.ftd2xx" modificationStamp="36" version="1.2">
+    <package visibility="1">
+        <fragment handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx"/>
+        <fragment handle="=com.ftdichip.ftd2xx/resources\/bundles\/en&lt;com.ftdichip.ftd2xx"/>
+        <fragment handle="=com.ftdichip.ftd2xx/resources\/bundles\/de&lt;com.ftdichip.ftd2xx"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{DeviceType.java[DeviceType" modificationStamp="12" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{FlowControl.java[FlowControl" modificationStamp="13" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{ModemStatus.java[ModemStatus" modificationStamp="21" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{Service.java[Service" modificationStamp="30" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{Port.java[Port" modificationStamp="15" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{Device.java[Device" modificationStamp="24" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{BitBangMode.java[BitBangMode" modificationStamp="19" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{FTD2xxException.java[FTD2xxException" modificationStamp="29" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{DataBits.java[DataBits" modificationStamp="26" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{DeviceDescriptorFT232R.java[DeviceDescriptorFT232R" modificationStamp="16" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{EEPROM.java[EEPROM" modificationStamp="17" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{InvalidDeviceDescriptorException.java[InvalidDeviceDescriptorException" modificationStamp="22" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{Parity.java[Parity" modificationStamp="18" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{DeviceDescriptor.java[DeviceDescriptor" modificationStamp="31" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{StopBits.java[StopBits" modificationStamp="32" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{DeviceDescriptorRev5.java[DeviceDescriptorRev5" modificationStamp="28" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{DeviceDescriptorRev4.java[DeviceDescriptorRev4" modificationStamp="20" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{EEPROMException.java[EEPROMException" modificationStamp="23" restrictions="0" visibility="0"/>
+        <type handle="=com.ftdichip.ftd2xx/src&lt;com.ftdichip.ftd2xx{CBusOption.java[CBusOption" modificationStamp="27" restrictions="0" visibility="0"/>
+    </package>
+</component>

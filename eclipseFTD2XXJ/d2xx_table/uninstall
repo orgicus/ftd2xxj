@@ -1,0 +1,24 @@
+################################################################################
+# Script to uninstall all d2xx_table API libraries and C/C++ include files.    #
+################################################################################
+
+#!/bin/bash
+
+LIBRARY_PATH=/usr/local/lib 
+
+RM_OPTIONS="-f -v"
+LD_CONFIG_OPTIONS="-n $LIBRARY_PATH"
+
+LIBRARY_NAME=libd2xx_table.so
+
+################################################################################
+# Remove files                                                                 #
+################################################################################
+echo "Remove files ..."
+rm $RM_OPTIONS $LIBRARY_PATH/$LIBRARY_NAME*
+
+################################################################################
+# Initialize system                                                            #
+################################################################################
+echo "Update library dependencies ..."
+/sbin/ldconfig $LD_CONFIG_OPTIONS
