@@ -86,7 +86,7 @@ Dev 3:
  ftHandle=0x0
 
 ```
-Using the java wrapper, this may through an error calling ```Service.listDevices()```
+Using the java wrapper, this may throw an error calling ```Service.listDevices()```
 
 Eclipse project details
 =======================
