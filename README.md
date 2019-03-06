@@ -201,3 +201,12 @@ Shared object name
 lib${BuildArtifactFileName}.${MAJOR_VERSION}
 ```
 **Note:** MAJOR_VERSION and MINOR_VERSION are defined in C/C++ Build > Build Variables (as Strings)
+
+** Update **
+
+The ftd2xxj-native folder includes the project setup for Windows mingw64 gcc 64 bit compilation.
+`win64-x64` within it contains the precompiled `ftd2xxj.dll` for Windows 64 bit.
+
+In hind sight this must have originally been a nicely setup project originally.
+This is **not** the recommended way to compile for other architectures, but does the (hacky) job for now.
+`FTD2XXj.jar` is the pre-compiled java library (in case the older builds complain about the RS232 device descriptor)
